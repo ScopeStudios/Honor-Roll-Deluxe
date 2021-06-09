@@ -118,9 +118,7 @@ void student::update() {
     updateEligibility();
 }
 
-
-std::ostream& operator<<(std::ostream& output, const student& aStudent) {
-    
+std::ostream& operator<<(std::ostream& output, const student& aStudent) {    
     output << "\n\t" << aStudent.fName << " " << aStudent.lName << "\n\nClass" << std::string(20, ' ') << "Grade\n"; // The name and table labels
     for (Course i : aStudent.courses) {
         std::cout << i; // Print each course
